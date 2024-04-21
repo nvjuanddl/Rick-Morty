@@ -48,6 +48,16 @@
 		CA53D4842BD496DC004CBF48 /* CharacterAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53D4792BD496DC004CBF48 /* CharacterAdapter.swift */; };
 		CA53D4852BD496DC004CBF48 /* CharactersListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53D47B2BD496DC004CBF48 /* CharactersListInteractor.swift */; };
 		CA53D4862BD496DC004CBF48 /* CharactersListInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53D47D2BD496DC004CBF48 /* CharactersListInterfaces.swift */; };
+		CA53D49A2BD49853004CBF48 /* EpisodeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53D4892BD49853004CBF48 /* EpisodeEntity.swift */; };
+		CA53D49B2BD49853004CBF48 /* EpisodeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53D48B2BD49853004CBF48 /* EpisodeRequest.swift */; };
+		CA53D49C2BD49853004CBF48 /* CharacterDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53D48D2BD49853004CBF48 /* CharacterDetailPresenter.swift */; };
+		CA53D49D2BD49853004CBF48 /* CharacterDetailWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53D48F2BD49853004CBF48 /* CharacterDetailWireframe.swift */; };
+		CA53D49E2BD49853004CBF48 /* EpisodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53D4922BD49853004CBF48 /* EpisodeView.swift */; };
+		CA53D49F2BD49853004CBF48 /* EpisodeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53D4932BD49853004CBF48 /* EpisodeProtocol.swift */; };
+		CA53D4A02BD49853004CBF48 /* CharacterDetailProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53D4942BD49853004CBF48 /* CharacterDetailProtocol.swift */; };
+		CA53D4A12BD49853004CBF48 /* CharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53D4952BD49853004CBF48 /* CharacterDetailView.swift */; };
+		CA53D4A22BD49853004CBF48 /* CharacterDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53D4972BD49853004CBF48 /* CharacterDetailInteractor.swift */; };
+		CA53D4A32BD49853004CBF48 /* CharacterDetailInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53D4992BD49853004CBF48 /* CharacterDetailInterfaces.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +124,16 @@
 		CA53D4792BD496DC004CBF48 /* CharacterAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterAdapter.swift; sourceTree = "<group>"; };
 		CA53D47B2BD496DC004CBF48 /* CharactersListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersListInteractor.swift; sourceTree = "<group>"; };
 		CA53D47D2BD496DC004CBF48 /* CharactersListInterfaces.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersListInterfaces.swift; sourceTree = "<group>"; };
+		CA53D4892BD49853004CBF48 /* EpisodeEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodeEntity.swift; sourceTree = "<group>"; };
+		CA53D48B2BD49853004CBF48 /* EpisodeRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodeRequest.swift; sourceTree = "<group>"; };
+		CA53D48D2BD49853004CBF48 /* CharacterDetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterDetailPresenter.swift; sourceTree = "<group>"; };
+		CA53D48F2BD49853004CBF48 /* CharacterDetailWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterDetailWireframe.swift; sourceTree = "<group>"; };
+		CA53D4922BD49853004CBF48 /* EpisodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodeView.swift; sourceTree = "<group>"; };
+		CA53D4932BD49853004CBF48 /* EpisodeProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodeProtocol.swift; sourceTree = "<group>"; };
+		CA53D4942BD49853004CBF48 /* CharacterDetailProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterDetailProtocol.swift; sourceTree = "<group>"; };
+		CA53D4952BD49853004CBF48 /* CharacterDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterDetailView.swift; sourceTree = "<group>"; };
+		CA53D4972BD49853004CBF48 /* CharacterDetailInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterDetailInteractor.swift; sourceTree = "<group>"; };
+		CA53D4992BD49853004CBF48 /* CharacterDetailInterfaces.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterDetailInterfaces.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -294,6 +314,7 @@
 		CA53D4202BD44743004CBF48 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				CA53D4872BD49852004CBF48 /* CharacterDetail */,
 				CA53D46D2BD496DC004CBF48 /* CharactersList */,
 				CA53D4582BD44773004CBF48 /* Splash */,
 			);
@@ -433,6 +454,87 @@
 			path = Interfaces;
 			sourceTree = "<group>";
 		};
+		CA53D4872BD49852004CBF48 /* CharacterDetail */ = {
+			isa = PBXGroup;
+			children = (
+				CA53D4882BD49853004CBF48 /* Entity */,
+				CA53D48A2BD49853004CBF48 /* Networking */,
+				CA53D48C2BD49853004CBF48 /* Presenter */,
+				CA53D48E2BD49853004CBF48 /* Wireframe */,
+				CA53D4902BD49853004CBF48 /* Views */,
+				CA53D4962BD49853004CBF48 /* Interactor */,
+				CA53D4982BD49853004CBF48 /* Interfaces */,
+			);
+			path = CharacterDetail;
+			sourceTree = "<group>";
+		};
+		CA53D4882BD49853004CBF48 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				CA53D4892BD49853004CBF48 /* EpisodeEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		CA53D48A2BD49853004CBF48 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				CA53D48B2BD49853004CBF48 /* EpisodeRequest.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		CA53D48C2BD49853004CBF48 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CA53D48D2BD49853004CBF48 /* CharacterDetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CA53D48E2BD49853004CBF48 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				CA53D48F2BD49853004CBF48 /* CharacterDetailWireframe.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		CA53D4902BD49853004CBF48 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CA53D4912BD49853004CBF48 /* Episode */,
+				CA53D4942BD49853004CBF48 /* CharacterDetailProtocol.swift */,
+				CA53D4952BD49853004CBF48 /* CharacterDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CA53D4912BD49853004CBF48 /* Episode */ = {
+			isa = PBXGroup;
+			children = (
+				CA53D4922BD49853004CBF48 /* EpisodeView.swift */,
+				CA53D4932BD49853004CBF48 /* EpisodeProtocol.swift */,
+			);
+			path = Episode;
+			sourceTree = "<group>";
+		};
+		CA53D4962BD49853004CBF48 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				CA53D4972BD49853004CBF48 /* CharacterDetailInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		CA53D4982BD49853004CBF48 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				CA53D4992BD49853004CBF48 /* CharacterDetailInterfaces.swift */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -566,6 +668,8 @@
 				CA53D40D2BD44188004CBF48 /* Encodable+Utils.swift in Sources */,
 				CA53D4662BD44838004CBF48 /* SplashView.swift in Sources */,
 				CA53D47F2BD496DC004CBF48 /* CharacterEntity.swift in Sources */,
+				CA53D49F2BD49853004CBF48 /* EpisodeProtocol.swift in Sources */,
+				CA53D49D2BD49853004CBF48 /* CharacterDetailWireframe.swift in Sources */,
 				CA53D4852BD496DC004CBF48 /* CharactersListInteractor.swift in Sources */,
 				CA53D4182BD44188004CBF48 /* Request.swift in Sources */,
 				CA53D40A2BD44188004CBF48 /* AppDelegate.swift in Sources */,
@@ -578,17 +682,25 @@
 				CA53D41C2BD44188004CBF48 /* HostingNavigationController.swift in Sources */,
 				CA53D40E2BD44188004CBF48 /* View+Utils.swift in Sources */,
 				CA53D41E2BD44188004CBF48 /* ViewInterface.swift in Sources */,
+				CA53D4A02BD49853004CBF48 /* CharacterDetailProtocol.swift in Sources */,
 				CA53D40F2BD44188004CBF48 /* String+Utils.swift in Sources */,
 				CA53D41F2BD44188004CBF48 /* InteractorInterface.swift in Sources */,
+				CA53D49B2BD49853004CBF48 /* EpisodeRequest.swift in Sources */,
 				CA53D41A2BD44188004CBF48 /* BaseWireframe.swift in Sources */,
 				CA53D40C2BD44188004CBF48 /* Constants.swift in Sources */,
+				CA53D4A12BD49853004CBF48 /* CharacterDetailView.swift in Sources */,
+				CA53D49C2BD49853004CBF48 /* CharacterDetailPresenter.swift in Sources */,
 				CA53D4112BD44188004CBF48 /* ActivityIndicator.swift in Sources */,
 				CA53D4102BD44188004CBF48 /* HorizontalAlignment+Utils.swift in Sources */,
 				CA53D4802BD496DC004CBF48 /* CharactersListRequest.swift in Sources */,
 				CA53D4652BD44838004CBF48 /* SplashPresenter.swift in Sources */,
 				CA53D4162BD44188004CBF48 /* GridCellView.swift in Sources */,
+				CA53D4A22BD49853004CBF48 /* CharacterDetailInteractor.swift in Sources */,
 				CA53D4822BD496DC004CBF48 /* CharactersListWireframe.swift in Sources */,
+				CA53D4A32BD49853004CBF48 /* CharacterDetailInterfaces.swift in Sources */,
 				CA53D4832BD496DC004CBF48 /* CharactersListView.swift in Sources */,
+				CA53D49A2BD49853004CBF48 /* EpisodeEntity.swift in Sources */,
+				CA53D49E2BD49853004CBF48 /* EpisodeView.swift in Sources */,
 				CA53D4692BD44838004CBF48 /* SplashWireframe.swift in Sources */,
 				CA53D4142BD44188004CBF48 /* GridCellProtocol.swift in Sources */,
 				CA53D4682BD44838004CBF48 /* SplashInterfaces.swift in Sources */,

@@ -39,6 +39,15 @@
 		CA53D4682BD44838004CBF48 /* SplashInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53D4612BD44838004CBF48 /* SplashInterfaces.swift */; };
 		CA53D4692BD44838004CBF48 /* SplashWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53D4632BD44838004CBF48 /* SplashWireframe.swift */; };
 		CA53D46C2BD4948A004CBF48 /* SplashFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53D46B2BD4948A004CBF48 /* SplashFormatter.swift */; };
+		CA53D47E2BD496DC004CBF48 /* CharactersListEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53D46F2BD496DC004CBF48 /* CharactersListEntity.swift */; };
+		CA53D47F2BD496DC004CBF48 /* CharacterEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53D4702BD496DC004CBF48 /* CharacterEntity.swift */; };
+		CA53D4802BD496DC004CBF48 /* CharactersListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53D4722BD496DC004CBF48 /* CharactersListRequest.swift */; };
+		CA53D4812BD496DC004CBF48 /* CharactersListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53D4742BD496DC004CBF48 /* CharactersListPresenter.swift */; };
+		CA53D4822BD496DC004CBF48 /* CharactersListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53D4762BD496DC004CBF48 /* CharactersListWireframe.swift */; };
+		CA53D4832BD496DC004CBF48 /* CharactersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53D4782BD496DC004CBF48 /* CharactersListView.swift */; };
+		CA53D4842BD496DC004CBF48 /* CharacterAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53D4792BD496DC004CBF48 /* CharacterAdapter.swift */; };
+		CA53D4852BD496DC004CBF48 /* CharactersListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53D47B2BD496DC004CBF48 /* CharactersListInteractor.swift */; };
+		CA53D4862BD496DC004CBF48 /* CharactersListInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53D47D2BD496DC004CBF48 /* CharactersListInterfaces.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +105,15 @@
 		CA53D4612BD44838004CBF48 /* SplashInterfaces.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashInterfaces.swift; sourceTree = "<group>"; };
 		CA53D4632BD44838004CBF48 /* SplashWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashWireframe.swift; sourceTree = "<group>"; };
 		CA53D46B2BD4948A004CBF48 /* SplashFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashFormatter.swift; sourceTree = "<group>"; };
+		CA53D46F2BD496DC004CBF48 /* CharactersListEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersListEntity.swift; sourceTree = "<group>"; };
+		CA53D4702BD496DC004CBF48 /* CharacterEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterEntity.swift; sourceTree = "<group>"; };
+		CA53D4722BD496DC004CBF48 /* CharactersListRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersListRequest.swift; sourceTree = "<group>"; };
+		CA53D4742BD496DC004CBF48 /* CharactersListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersListPresenter.swift; sourceTree = "<group>"; };
+		CA53D4762BD496DC004CBF48 /* CharactersListWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersListWireframe.swift; sourceTree = "<group>"; };
+		CA53D4782BD496DC004CBF48 /* CharactersListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersListView.swift; sourceTree = "<group>"; };
+		CA53D4792BD496DC004CBF48 /* CharacterAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterAdapter.swift; sourceTree = "<group>"; };
+		CA53D47B2BD496DC004CBF48 /* CharactersListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersListInteractor.swift; sourceTree = "<group>"; };
+		CA53D47D2BD496DC004CBF48 /* CharactersListInterfaces.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersListInterfaces.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,10 +202,10 @@
 			isa = PBXGroup;
 			children = (
 				CA53D3EC2BD44188004CBF48 /* App */,
+				CA53D3FE2BD44188004CBF48 /* Base */,
 				CA53D3EF2BD44188004CBF48 /* Constants */,
 				CA53D3F12BD44188004CBF48 /* Utils */,
 				CA53D3F62BD44188004CBF48 /* Views */,
-				CA53D3FE2BD44188004CBF48 /* Base */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -276,6 +294,7 @@
 		CA53D4202BD44743004CBF48 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				CA53D46D2BD496DC004CBF48 /* CharactersList */,
 				CA53D4582BD44773004CBF48 /* Splash */,
 			);
 			path = Modules;
@@ -340,6 +359,78 @@
 				CA53D46B2BD4948A004CBF48 /* SplashFormatter.swift */,
 			);
 			path = Formatter;
+			sourceTree = "<group>";
+		};
+		CA53D46D2BD496DC004CBF48 /* CharactersList */ = {
+			isa = PBXGroup;
+			children = (
+				CA53D46E2BD496DC004CBF48 /* Entity */,
+				CA53D4712BD496DC004CBF48 /* Networking */,
+				CA53D4732BD496DC004CBF48 /* Presenter */,
+				CA53D4752BD496DC004CBF48 /* Wireframe */,
+				CA53D4772BD496DC004CBF48 /* Views */,
+				CA53D47A2BD496DC004CBF48 /* Interactor */,
+				CA53D47C2BD496DC004CBF48 /* Interfaces */,
+			);
+			path = CharactersList;
+			sourceTree = "<group>";
+		};
+		CA53D46E2BD496DC004CBF48 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				CA53D46F2BD496DC004CBF48 /* CharactersListEntity.swift */,
+				CA53D4702BD496DC004CBF48 /* CharacterEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		CA53D4712BD496DC004CBF48 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				CA53D4722BD496DC004CBF48 /* CharactersListRequest.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		CA53D4732BD496DC004CBF48 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CA53D4742BD496DC004CBF48 /* CharactersListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CA53D4752BD496DC004CBF48 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				CA53D4762BD496DC004CBF48 /* CharactersListWireframe.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		CA53D4772BD496DC004CBF48 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CA53D4782BD496DC004CBF48 /* CharactersListView.swift */,
+				CA53D4792BD496DC004CBF48 /* CharacterAdapter.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CA53D47A2BD496DC004CBF48 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				CA53D47B2BD496DC004CBF48 /* CharactersListInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		CA53D47C2BD496DC004CBF48 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				CA53D47D2BD496DC004CBF48 /* CharactersListInterfaces.swift */,
+			);
+			path = Interfaces;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -474,11 +565,15 @@
 			files = (
 				CA53D40D2BD44188004CBF48 /* Encodable+Utils.swift in Sources */,
 				CA53D4662BD44838004CBF48 /* SplashView.swift in Sources */,
+				CA53D47F2BD496DC004CBF48 /* CharacterEntity.swift in Sources */,
+				CA53D4852BD496DC004CBF48 /* CharactersListInteractor.swift in Sources */,
 				CA53D4182BD44188004CBF48 /* Request.swift in Sources */,
 				CA53D40A2BD44188004CBF48 /* AppDelegate.swift in Sources */,
 				CA53D46C2BD4948A004CBF48 /* SplashFormatter.swift in Sources */,
 				CA53D4152BD44188004CBF48 /* GridView.swift in Sources */,
+				CA53D47E2BD496DC004CBF48 /* CharactersListEntity.swift in Sources */,
 				CA53D41B2BD44188004CBF48 /* FormatterInterface.swift in Sources */,
+				CA53D4842BD496DC004CBF48 /* CharacterAdapter.swift in Sources */,
 				CA53D4172BD44188004CBF48 /* Networker.swift in Sources */,
 				CA53D41C2BD44188004CBF48 /* HostingNavigationController.swift in Sources */,
 				CA53D40E2BD44188004CBF48 /* View+Utils.swift in Sources */,
@@ -489,14 +584,19 @@
 				CA53D40C2BD44188004CBF48 /* Constants.swift in Sources */,
 				CA53D4112BD44188004CBF48 /* ActivityIndicator.swift in Sources */,
 				CA53D4102BD44188004CBF48 /* HorizontalAlignment+Utils.swift in Sources */,
+				CA53D4802BD496DC004CBF48 /* CharactersListRequest.swift in Sources */,
 				CA53D4652BD44838004CBF48 /* SplashPresenter.swift in Sources */,
 				CA53D4162BD44188004CBF48 /* GridCellView.swift in Sources */,
+				CA53D4822BD496DC004CBF48 /* CharactersListWireframe.swift in Sources */,
+				CA53D4832BD496DC004CBF48 /* CharactersListView.swift in Sources */,
 				CA53D4692BD44838004CBF48 /* SplashWireframe.swift in Sources */,
 				CA53D4142BD44188004CBF48 /* GridCellProtocol.swift in Sources */,
 				CA53D4682BD44838004CBF48 /* SplashInterfaces.swift in Sources */,
 				CA53D4642BD44838004CBF48 /* SplashListInteractor.swift in Sources */,
+				CA53D4812BD496DC004CBF48 /* CharactersListPresenter.swift in Sources */,
 				CA53D4132BD44188004CBF48 /* TextFieldClearButton.swift in Sources */,
 				CA53D4192BD44188004CBF48 /* LazyHostingViewController.swift in Sources */,
+				CA53D4862BD496DC004CBF48 /* CharactersListInterfaces.swift in Sources */,
 				CA53D4122BD44188004CBF48 /* HeaderSearchView.swift in Sources */,
 				CA53D41D2BD44188004CBF48 /* PresenterInterface.swift in Sources */,
 			);

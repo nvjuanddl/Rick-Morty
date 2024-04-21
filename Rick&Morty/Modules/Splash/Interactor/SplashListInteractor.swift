@@ -1,6 +1,6 @@
 //
 //  SplashInteractor.swift
-//  RickAndMorty
+//  Rick&Morty
 //
 //  Created by Juan Delgado Lasso on 20/04/24.
 //

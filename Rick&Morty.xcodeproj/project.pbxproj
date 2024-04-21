@@ -33,6 +33,12 @@
 		CA53D41D2BD44188004CBF48 /* PresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53D4072BD44188004CBF48 /* PresenterInterface.swift */; };
 		CA53D41E2BD44188004CBF48 /* ViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53D4082BD44188004CBF48 /* ViewInterface.swift */; };
 		CA53D41F2BD44188004CBF48 /* InteractorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53D4092BD44188004CBF48 /* InteractorInterface.swift */; };
+		CA53D4642BD44838004CBF48 /* SplashListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53D45A2BD44838004CBF48 /* SplashListInteractor.swift */; };
+		CA53D4652BD44838004CBF48 /* SplashPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53D45C2BD44838004CBF48 /* SplashPresenter.swift */; };
+		CA53D4662BD44838004CBF48 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53D45E2BD44838004CBF48 /* SplashView.swift */; };
+		CA53D4682BD44838004CBF48 /* SplashInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53D4612BD44838004CBF48 /* SplashInterfaces.swift */; };
+		CA53D4692BD44838004CBF48 /* SplashWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53D4632BD44838004CBF48 /* SplashWireframe.swift */; };
+		CA53D46C2BD4948A004CBF48 /* SplashFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53D46B2BD4948A004CBF48 /* SplashFormatter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +90,12 @@
 		CA53D4072BD44188004CBF48 /* PresenterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresenterInterface.swift; sourceTree = "<group>"; };
 		CA53D4082BD44188004CBF48 /* ViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewInterface.swift; sourceTree = "<group>"; };
 		CA53D4092BD44188004CBF48 /* InteractorInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractorInterface.swift; sourceTree = "<group>"; };
+		CA53D45A2BD44838004CBF48 /* SplashListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashListInteractor.swift; sourceTree = "<group>"; };
+		CA53D45C2BD44838004CBF48 /* SplashPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashPresenter.swift; sourceTree = "<group>"; };
+		CA53D45E2BD44838004CBF48 /* SplashView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		CA53D4612BD44838004CBF48 /* SplashInterfaces.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashInterfaces.swift; sourceTree = "<group>"; };
+		CA53D4632BD44838004CBF48 /* SplashWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashWireframe.swift; sourceTree = "<group>"; };
+		CA53D46B2BD4948A004CBF48 /* SplashFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashFormatter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,9 +146,10 @@
 		CA53D38A2BD44033004CBF48 /* Rick&Morty */ = {
 			isa = PBXGroup;
 			children = (
-				CA53D3EB2BD44188004CBF48 /* Common */,
-				CA53D38F2BD44035004CBF48 /* Assets.xcassets */,
 				CA53D3912BD44035004CBF48 /* Rick_Morty.entitlements */,
+				CA53D38F2BD44035004CBF48 /* Assets.xcassets */,
+				CA53D3EB2BD44188004CBF48 /* Common */,
+				CA53D4202BD44743004CBF48 /* Modules */,
 				CA53D3922BD44035004CBF48 /* Preview Content */,
 			);
 			path = "Rick&Morty";
@@ -258,6 +271,75 @@
 				CA53D4092BD44188004CBF48 /* InteractorInterface.swift */,
 			);
 			path = VIPER;
+			sourceTree = "<group>";
+		};
+		CA53D4202BD44743004CBF48 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				CA53D4582BD44773004CBF48 /* Splash */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		CA53D4582BD44773004CBF48 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				CA53D46A2BD4946C004CBF48 /* Formatter */,
+				CA53D4592BD44838004CBF48 /* Interactor */,
+				CA53D4602BD44838004CBF48 /* Interfaces */,
+				CA53D45B2BD44838004CBF48 /* Presenter */,
+				CA53D45D2BD44838004CBF48 /* Views */,
+				CA53D4622BD44838004CBF48 /* Wireframe */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		CA53D4592BD44838004CBF48 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				CA53D45A2BD44838004CBF48 /* SplashListInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		CA53D45B2BD44838004CBF48 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CA53D45C2BD44838004CBF48 /* SplashPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CA53D45D2BD44838004CBF48 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CA53D45E2BD44838004CBF48 /* SplashView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CA53D4602BD44838004CBF48 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				CA53D4612BD44838004CBF48 /* SplashInterfaces.swift */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		CA53D4622BD44838004CBF48 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				CA53D4632BD44838004CBF48 /* SplashWireframe.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		CA53D46A2BD4946C004CBF48 /* Formatter */ = {
+			isa = PBXGroup;
+			children = (
+				CA53D46B2BD4948A004CBF48 /* SplashFormatter.swift */,
+			);
+			path = Formatter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -391,8 +473,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA53D40D2BD44188004CBF48 /* Encodable+Utils.swift in Sources */,
+				CA53D4662BD44838004CBF48 /* SplashView.swift in Sources */,
 				CA53D4182BD44188004CBF48 /* Request.swift in Sources */,
 				CA53D40A2BD44188004CBF48 /* AppDelegate.swift in Sources */,
+				CA53D46C2BD4948A004CBF48 /* SplashFormatter.swift in Sources */,
 				CA53D4152BD44188004CBF48 /* GridView.swift in Sources */,
 				CA53D41B2BD44188004CBF48 /* FormatterInterface.swift in Sources */,
 				CA53D4172BD44188004CBF48 /* Networker.swift in Sources */,
@@ -405,8 +489,12 @@
 				CA53D40C2BD44188004CBF48 /* Constants.swift in Sources */,
 				CA53D4112BD44188004CBF48 /* ActivityIndicator.swift in Sources */,
 				CA53D4102BD44188004CBF48 /* HorizontalAlignment+Utils.swift in Sources */,
+				CA53D4652BD44838004CBF48 /* SplashPresenter.swift in Sources */,
 				CA53D4162BD44188004CBF48 /* GridCellView.swift in Sources */,
+				CA53D4692BD44838004CBF48 /* SplashWireframe.swift in Sources */,
 				CA53D4142BD44188004CBF48 /* GridCellProtocol.swift in Sources */,
+				CA53D4682BD44838004CBF48 /* SplashInterfaces.swift in Sources */,
+				CA53D4642BD44838004CBF48 /* SplashListInteractor.swift in Sources */,
 				CA53D4132BD44188004CBF48 /* TextFieldClearButton.swift in Sources */,
 				CA53D4192BD44188004CBF48 /* LazyHostingViewController.swift in Sources */,
 				CA53D4122BD44188004CBF48 /* HeaderSearchView.swift in Sources */,
@@ -570,8 +658,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Rick&Morty/Preview Content\"";
+				DONT_GENERATE_INFOPLIST_FILE = YES;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/Rick&Morty/Common/App/Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -593,6 +682,7 @@
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -608,8 +698,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Rick&Morty/Preview Content\"";
+				DONT_GENERATE_INFOPLIST_FILE = YES;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/Rick&Morty/Common/App/Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -631,6 +722,7 @@
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -651,7 +743,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.app.Rick-MortyTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -673,7 +767,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.app.Rick-MortyTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -694,7 +790,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.app.Rick-MortyUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -715,7 +813,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.app.Rick-MortyUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

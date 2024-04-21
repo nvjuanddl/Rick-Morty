@@ -26,13 +26,13 @@ final class CharacterDetailInteractor {
 
 extension CharacterDetailInteractor: CharacterDetailInteractorInterface {
     
-    func loadEpisodeDetail(url: String) -> AnyPublisher<EpisodeEntity, Error> {
+    func loadEpisodeDetail(url: String) -> AnyPublisher<EpisodeEntity, CustomError> {
         let request = EpisodeRequest(urlString: url)
         return self.networker.fetch(request).eraseToAnyPublisher()
     }
     
-    func getEpisodesList(with list: [String]) -> AnyPublisher<[EpisodeEntity], Error> {
-        let publishers: [AnyPublisher<EpisodeEntity, Error>] = list.map(loadEpisodeDetail)
+    func getEpisodesList(with list: [String]) -> AnyPublisher<[EpisodeEntity], CustomError> {
+        let publishers: [AnyPublisher<EpisodeEntity, CustomError>] = list.map(loadEpisodeDetail)
         return Publishers.MergeMany(publishers)
             .collect(publishers.count)
             .eraseToAnyPublisher()

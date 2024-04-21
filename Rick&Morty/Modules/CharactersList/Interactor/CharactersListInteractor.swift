@@ -31,7 +31,7 @@ extension CharactersListInteractor: CharactersListInteractorInterface {
         return nextURL != nil
     }
     
-    func getCharactersList() -> AnyPublisher<[CharacterEntity], Error> {
+    func getCharactersList() -> AnyPublisher<[CharacterEntity], CustomError> {
         let request = CharactersListRequest(urlString: nextURL)
         return networker.fetch(request).compactMap { response in
             self.nextURL = response.info.next

@@ -29,4 +29,10 @@ extension CharactersListWireframe: CharactersListWireframeInterface {
         let wireframe = CharacterDetailWireframe(item: item)
         navigationController?.pushWireframe(wireframe)
     }
+    
+    func showAlert(title: String, message: String, actionName: String, completion: (() -> Void)? = nil) {
+        navigationController?.showAlert(title, message, actionName) { _ in
+            completion?()
+        }
+    }
 }

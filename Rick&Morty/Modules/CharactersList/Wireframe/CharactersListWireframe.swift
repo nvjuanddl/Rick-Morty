@@ -26,5 +26,7 @@ final class CharactersListWireframe: BaseWireframe<LazyHostingViewController<Cha
 extension CharactersListWireframe: CharactersListWireframeInterface {
     
     func goToCharactersDetail(item: CharacterEntity) {
+        let wireframe = CharacterDetailWireframe(item: item)
+        navigationController?.pushWireframe(wireframe)
     }
 }

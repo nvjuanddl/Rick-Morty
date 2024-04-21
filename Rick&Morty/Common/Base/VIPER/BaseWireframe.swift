@@ -50,6 +50,14 @@ extension UIViewController {
     func presentWireframe<ViewController>(_ wireframe: BaseWireframe<ViewController>, animated: Bool = true, completion: (() -> Void)? = nil) {
         present(wireframe.viewController, animated: animated, completion: completion)
     }
+    
+    func showAlert(_ title: String, _ message: String, _ actionName: String, completion: @escaping (UIAlertAction) -> Void) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alertController.addAction(UIAlertAction.init(title: actionName, style: .cancel, handler: completion))
+        DispatchQueue.main.async(execute: {
+            self.present(alertController, animated: true, completion: nil)
+        })
+    }
 }
 
 extension UINavigationController {
@@ -65,12 +73,4 @@ extension UINavigationController {
 
 extension BaseWireframe: WireframeInterface {
 
-    func showLoading(status: String? = nil) {
-    }
-
-    func hideLoading() {
-    }
-
-    func show(error: Error) {
-    }
 }

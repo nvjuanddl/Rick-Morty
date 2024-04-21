@@ -9,11 +9,12 @@ import Combine
 
 protocol CharactersListWireframeInterface: WireframeInterface {
     func goToCharactersDetail(item: CharacterEntity)
+    func showAlert(title: String, message: String, actionName: String, completion: (() -> Void)?)
 }
 
 protocol CharactersListInteractorInterface: InteractorInterface {
     func hasNext() -> Bool
-    func getCharactersList() -> AnyPublisher<[CharacterEntity], Error>
+    func getCharactersList() -> AnyPublisher<[CharacterEntity], CustomError>
 }
 
 protocol CharactersListPresenterInterface: ObservableObject {

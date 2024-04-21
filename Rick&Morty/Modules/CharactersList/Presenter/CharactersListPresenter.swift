@@ -55,12 +55,23 @@ extension CharactersListPresenter: CharactersListPresenterInterface {
     func getCharactersList() {
         interactor
             .getCharactersList()
-            .sink(receiveCompletion: { completion in
+            .sink(receiveCompletion: { [weak self] completion in
+                guard let self else { return }
                 switch completion {
+                case .failure(let failure) where failure == .notConnectedToInternet:
+                    self.wireframe.showAlert(title: "Error", message: "Sin conexion a internet", actionName: "Reitentar") { [weak self] in
+                        guard let self else { return }
+                        self.getCharactersList()
+                    }
+                case .failure(let failure) where failure == .networkConnectionLost:
+                    self.wireframe.showAlert(title: "Error", message: "Perdida la conexion", actionName: "Reitentar") { [weak self] in
+                        guard let self else { return }
+                        self.getCharactersList()
+                    }
                 case .finished:
                     break
-                case .failure(let failure):
-                    print(failure)
+                case .failure:
+                    self.wireframe.showAlert(title: "Error", message: "Se presento un problema, por favor reintenta mas tarde", actionName: "Reitentar", completion: nil)
                 }
             }, receiveValue: { [weak self] items in
                 guard let self else { return }

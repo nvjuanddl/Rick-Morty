@@ -27,4 +27,10 @@ extension CharacterDetailWireframe: CharacterDetailWireframeInterface {
     func goBack() {
         navigationController?.popViewController(animated: true)
     }
+    
+    func showAlert(title: String, message: String, actionName: String, completion: (() -> Void)? = nil) {
+        navigationController?.showAlert(title, message, actionName) { _ in
+            completion?()
+        }
+    }
 }

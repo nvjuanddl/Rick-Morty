@@ -1,6 +1,6 @@
 //
 //  SplashWireframe.swift
-//  RickAndMorty
+//  Rick&Morty
 //
 //  Created by Juan Delgado Lasso on 20/04/24.
 //
@@ -26,5 +26,7 @@ final class SplashWireframe: BaseWireframe<LazyHostingViewController<SplashView>
 extension SplashWireframe: SplashWireframeInterface {
     
     func goToCharactersList() {
+        let wireframe = CharactersListWireframe()
+        navigationController?.pushWireframe(wireframe)
     }
 }

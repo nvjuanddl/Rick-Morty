@@ -16,6 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         guard let window = window else { return false }
         let navigationController = HostingNavigationController()
+        let wireframe = SplashWireframe()
+        navigationController.setRootWireframe(wireframe)
         window.rootViewController = navigationController
         window.makeKeyAndVisible()
         return true
